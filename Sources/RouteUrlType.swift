@@ -15,11 +15,8 @@ public protocol RouteUrlType {
 open class BaseRoute: RouteUrlType {
     public typealias ClosureType = (Router) -> UIViewController?
     private let closure: ClosureType
-    public required init(_ closure: @escaping ClosureType) {
+    public init(_ closure: @escaping ClosureType) {
         self.closure = closure
-    }
-    public static func create(_ closure: @escaping ClosureType) -> Self {
-        return self.init(closure)
     }
     open func createViewCon(_ manager: Router) -> UIViewController? {
         return self.closure(manager)
