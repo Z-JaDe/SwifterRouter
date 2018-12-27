@@ -6,9 +6,9 @@ Pod::Spec.new do |s|
     Swift方式的路由跳转，支持枚举、结构体、类
     DESC
     s.homepage         = "https://github.com/Z-JaDe"
-    s.license          = 'MIT'
+    s.license          = "Copyright (c) 2018年 ZJaDe. All rights reserved."
     s.author           = { "ZJaDe" => "zjade@outlook.com" }
-    s.source           = { :git => "git@github.com:Z-JaDe/SwifterRouter.git", :tag => s.version.to_s }
+    s.source           = { :git => "https://github.com/Z-JaDe/SwifterRouter.git", :tag => s.version.to_s }
     
     s.requires_arc          = true
     
