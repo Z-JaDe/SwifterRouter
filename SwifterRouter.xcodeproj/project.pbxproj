@@ -12,6 +12,12 @@
 		C916FF2921D4B9F000DFC8C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C916FF2721D4B9F000DFC8C2 /* Main.storyboard */; };
 		C916FF2B21D4B9F200DFC8C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C916FF2A21D4B9F200DFC8C2 /* Assets.xcassets */; };
 		C916FF2E21D4B9F200DFC8C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C916FF2C21D4B9F200DFC8C2 /* LaunchScreen.storyboard */; };
+		C916FF3B21D4BA4300DFC8C2 /* RouterWebUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C916FF3621D4BA4300DFC8C2 /* RouterWebUrl.swift */; };
+		C916FF3C21D4BA4300DFC8C2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C916FF3721D4BA4300DFC8C2 /* Router.swift */; };
+		C916FF3D21D4BA4300DFC8C2 /* AppRouterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C916FF3821D4BA4300DFC8C2 /* AppRouterItem.swift */; };
+		C916FF3E21D4BA4300DFC8C2 /* RouteUrlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C916FF3921D4BA4300DFC8C2 /* RouteUrlType.swift */; };
+		C916FF3F21D4BA4300DFC8C2 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C916FF3A21D4BA4300DFC8C2 /* UINavigationController.swift */; };
+		C916FF4221D4C40600DFC8C2 /* SwifterRouter.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C916FF4121D4C40600DFC8C2 /* SwifterRouter.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		C916FF2A21D4B9F200DFC8C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C916FF2D21D4B9F200DFC8C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C916FF2F21D4B9F200DFC8C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C916FF3621D4BA4300DFC8C2 /* RouterWebUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterWebUrl.swift; sourceTree = "<group>"; };
+		C916FF3721D4BA4300DFC8C2 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		C916FF3821D4BA4300DFC8C2 /* AppRouterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouterItem.swift; sourceTree = "<group>"; };
+		C916FF3921D4BA4300DFC8C2 /* RouteUrlType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteUrlType.swift; sourceTree = "<group>"; };
+		C916FF3A21D4BA4300DFC8C2 /* UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		C916FF4121D4C40600DFC8C2 /* SwifterRouter.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwifterRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +50,9 @@
 		C916FF1721D4B9F000DFC8C2 = {
 			isa = PBXGroup;
 			children = (
+				C916FF4121D4C40600DFC8C2 /* SwifterRouter.podspec */,
 				C916FF2221D4B9F000DFC8C2 /* SwifterRouter */,
+				C916FF3521D4BA2000DFC8C2 /* Sources */,
 				C916FF2121D4B9F000DFC8C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +76,26 @@
 				C916FF2F21D4B9F200DFC8C2 /* Info.plist */,
 			);
 			path = SwifterRouter;
+			sourceTree = "<group>";
+		};
+		C916FF3521D4BA2000DFC8C2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C916FF4021D4BCCE00DFC8C2 /* Web */,
+				C916FF3721D4BA4300DFC8C2 /* Router.swift */,
+				C916FF3921D4BA4300DFC8C2 /* RouteUrlType.swift */,
+				C916FF3A21D4BA4300DFC8C2 /* UINavigationController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C916FF4021D4BCCE00DFC8C2 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				C916FF3821D4BA4300DFC8C2 /* AppRouterItem.swift */,
+				C916FF3621D4BA4300DFC8C2 /* RouterWebUrl.swift */,
+			);
+			path = Web;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +158,7 @@
 			files = (
 				C916FF2E21D4B9F200DFC8C2 /* LaunchScreen.storyboard in Resources */,
 				C916FF2B21D4B9F200DFC8C2 /* Assets.xcassets in Resources */,
+				C916FF4221D4C40600DFC8C2 /* SwifterRouter.podspec in Resources */,
 				C916FF2921D4B9F000DFC8C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C916FF3B21D4BA4300DFC8C2 /* RouterWebUrl.swift in Sources */,
+				C916FF3E21D4BA4300DFC8C2 /* RouteUrlType.swift in Sources */,
 				C916FF2621D4B9F000DFC8C2 /* ViewController.swift in Sources */,
+				C916FF3C21D4BA4300DFC8C2 /* Router.swift in Sources */,
+				C916FF3D21D4BA4300DFC8C2 /* AppRouterItem.swift in Sources */,
 				C916FF2421D4B9F000DFC8C2 /* AppDelegate.swift in Sources */,
+				C916FF3F21D4BA4300DFC8C2 /* UINavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
