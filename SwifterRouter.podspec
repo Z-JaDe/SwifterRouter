@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
     s.version          = "1.0.0"
     s.summary          = "Router"
     s.description      = <<-DESC
-    ModalViewController
+    Swift方式的路由跳转，支持枚举、结构体、类
     DESC
     s.homepage         = "https://github.com/Z-JaDe"
     s.license          = 'MIT'

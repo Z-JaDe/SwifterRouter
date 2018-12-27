@@ -1,4 +1,4 @@
-SwifterRouter
+Swift方式的路由跳转，支持枚举、结构体、类
 
 先看[Router.swift](/Sources/Router.swift)
 再看[RouteUrlType.swift](/Sources/RouteUrlType.swift)
