@@ -18,6 +18,7 @@
 		C916FF3E21D4BA4300DFC8C2 /* RouteUrlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C916FF3921D4BA4300DFC8C2 /* RouteUrlType.swift */; };
 		C916FF3F21D4BA4300DFC8C2 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C916FF3A21D4BA4300DFC8C2 /* UINavigationController.swift */; };
 		C916FF4221D4C40600DFC8C2 /* SwifterRouter.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C916FF4121D4C40600DFC8C2 /* SwifterRouter.podspec */; };
+		C916FF4421D4CCAF00DFC8C2 /* Route_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C916FF4321D4CCAF00DFC8C2 /* Route_Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C916FF3921D4BA4300DFC8C2 /* RouteUrlType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteUrlType.swift; sourceTree = "<group>"; };
 		C916FF3A21D4BA4300DFC8C2 /* UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		C916FF4121D4C40600DFC8C2 /* SwifterRouter.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwifterRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C916FF4321D4CCAF00DFC8C2 /* Route_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route_Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			children = (
 				C916FF2321D4B9F000DFC8C2 /* AppDelegate.swift */,
 				C916FF2521D4B9F000DFC8C2 /* ViewController.swift */,
+				C916FF4321D4CCAF00DFC8C2 /* Route_Test.swift */,
 				C916FF2721D4B9F000DFC8C2 /* Main.storyboard */,
 				C916FF2A21D4B9F200DFC8C2 /* Assets.xcassets */,
 				C916FF2C21D4B9F200DFC8C2 /* LaunchScreen.storyboard */,
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C916FF3B21D4BA4300DFC8C2 /* RouterWebUrl.swift in Sources */,
+				C916FF4421D4CCAF00DFC8C2 /* Route_Test.swift in Sources */,
 				C916FF3E21D4BA4300DFC8C2 /* RouteUrlType.swift in Sources */,
 				C916FF2621D4B9F000DFC8C2 /* ViewController.swift in Sources */,
 				C916FF3C21D4BA4300DFC8C2 /* Router.swift in Sources */,

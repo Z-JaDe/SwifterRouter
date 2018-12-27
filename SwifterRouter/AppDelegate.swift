@@ -7,7 +7,13 @@
 //
 
 import UIKit
-
+func router(_ navCon: UINavigationController? = nil) -> Router {
+    return Router(navCon ?? currentNavCon())
+}
+func currentNavCon() -> UINavigationController {
+    let viewCon = UIApplication.shared.delegate?.window??.rootViewController as? UINavigationController
+    return viewCon!
+}
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
