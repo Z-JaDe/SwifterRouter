@@ -14,7 +14,7 @@ public struct RouterWebUrl {
     public var params: [String: String] = [: ]
 
     public var pathArr: [String] {
-        return self.path.lazy.split(separator: "/").filter {$0.count > 0}.map(String.init)
+        return self.path.split(separator: "/").filter {$0.count > 0}.map(String.init)
     }
 
     public let components: URLComponents
