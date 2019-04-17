@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "SwifterRouter"
-    s.version          = "1.0.0"
+    s.version          = "1.1.0"
     s.summary          = "Router"
     s.description      = <<-DESC
     Swift方式的路由跳转，支持枚举、结构体、类
