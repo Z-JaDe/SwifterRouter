@@ -1,1 +1,6 @@
-language: objective-c
+
+language: swift
+osx_image: xcode10.2
+xcode_xcodeproj: SwifterRouter.xcodeproj
+xcode_scheme: SwifterRouter
+xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
