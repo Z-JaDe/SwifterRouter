@@ -5,7 +5,7 @@
 //  Created by ZJaDe on 2018/6/21.
 //  Copyright © 2018年 ZJaDe. All rights reserved.
 //
-/// ZJaDe: 解析webUrl 跳转
+// ZJaDe: 解析webUrl 跳转
 import Foundation
 public struct RouterWebUrl {
     public let scheme: String
