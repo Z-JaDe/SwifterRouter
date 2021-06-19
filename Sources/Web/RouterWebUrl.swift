@@ -34,17 +34,19 @@ public struct RouterWebUrl {
         })
     }
 }
-//extension Router {
-//    public func parseUrl(_ urlStr: String) {
-//        guard let routerUrl = RouterWebUrl(urlStr) else {
-//            return
-//        }
-//        guard let module = routerUrl.pathArr.first else {
-//            return
-//        }
-//        let appRouterItem = AppRouterItem(module)
-//        if let appRouterItem = appRouterItem as? RouterUrlConverterProtocol {
-//            appRouterItem.decode(routerUrl)
-//        }
-//    }
-//}
+/*
+ extension Router {
+     public func parseUrl(_ urlStr: String) {
+         guard let routerUrl = RouterWebUrl(urlStr) else {
+             return
+         }
+         guard let module = routerUrl.pathArr.first else {
+             return
+         }
+         let appRouterItem = AppRouterItem(module)
+         if let appRouterItem = appRouterItem as? RouterUrlConverterProtocol {
+             appRouterItem.decode(routerUrl)
+         }
+     }
+ }
+ */
