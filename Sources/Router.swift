@@ -1,6 +1,6 @@
 //
 //  Router.swift
-//  ZiWoYou
+//  AppExtension
 //
 //  Created by Z_JaDe on 2016/10/19.
 //  Copyright © 2016 Z_JaDe. All rights reserved.
@@ -23,23 +23,31 @@ public struct Router {
     }
     public let showType: ShowType
     public let currentNavC: UINavigationController
-    public init(_ currentNavC: UINavigationController) {
-        self.currentNavC = currentNavC
+    public init(navCon: UINavigationController) {
+        self.currentNavC = navCon
         self.showType = .none
+    }
+    public init?(_ viewCon: UIViewController) {
+        if let navCon = viewCon as? UINavigationController {
+            self = Router(navCon: navCon)
+        } else if let navCon = viewCon.navigationController {
+            self = Router(navCon: navCon)
+        }
+        return nil
     }
     private init(_ currentNavC: UINavigationController, _ showType: ShowType) {
         self.currentNavC = currentNavC
         self.showType = showType
     }
     private func map(showType: ShowType) -> Router {
-        return Router(currentNavC, showType)
+        Router(currentNavC, showType)
     }
 }
 // MARK: - pop
 extension Router {
     @discardableResult
     public func popTo<T: UIViewController>(_ VCType: T.Type, animated: Bool = true) -> Bool {
-        return currentNavC.popTo(VCType, animated: animated)
+        currentNavC.popTo(VCType, animated: animated)
     }
     public func pop(count: Int, animated: Bool = true) {
         currentNavC.pop(count: count, animated: animated)
